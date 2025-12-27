@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>City Insight Dashboard</h1>
+        
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="errorBox" class="error"></div>
+
+        <div id="results" style="display: none;">
+            <section class="weather-card">
+                <h2 id="weatherTitle"></h2>
+                <div class="grid" id="weatherDetails">
+                    <!-- JS will inject weather data here -->
+                </div>
+            </section>
+
+            <section class="news-section">
+                <h2>Latest Local News</h2>
+                <div id="newsList">
+                    <!-- JS will inject news items here -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
